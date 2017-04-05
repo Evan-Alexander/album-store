@@ -29,7 +29,8 @@ export class AlbumDetailComponent implements OnInit {
     this.albumService.getAlbumById(this.albumId).subscribe(dataLastEmittedFromObserver => {
       this.albumToDisplay = new Album(dataLastEmittedFromObserver.title,
                                       dataLastEmittedFromObserver.artist,
-                                      dataLastEmittedFromObserver.description);
+                                      dataLastEmittedFromObserver.description,
+                                      dataLastEmittedFromObserver.price);
     })
 
   }

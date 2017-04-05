@@ -8,9 +8,14 @@
 <input [(ngModel)]="selectedAlbum.artist">
 <br>
 
+<label>New Album Price:</label>
+<input [(ngModel)]="selectedAlbum.price">
+<br>
+
 <label>New Album Description:</label>
 <input [(ngModel)]="selectedAlbum.description">
 <br>
+
 <br>
 <button (click)="beginUpdatingAlbum(selectedAlbum)">Update</button>
 <br>

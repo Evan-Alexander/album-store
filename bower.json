@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Evan-Alexander/album-store",
   "ignore": [
     "**/.*",
     "node_modules",

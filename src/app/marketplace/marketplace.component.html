@@ -1,15 +1,15 @@
-<h2>Marketplace</h2>
+<h2 class="subheader">Marketplace</h2>
 
-    <select (change)="onChange($event.target.value)">
+    <select id="filter" (change)="onChange($event.target.value)">
       <option value="allAlbums">All Albums</option>
       <option value="underTen">Albums under $10</option>
       <option value="overTen">Albums over $10</option>
     </select>
 
-<div *ngFor="let album of albums | filter:priceFilter"  class="panel panel-default">
+<div id="marketplace-tiles" *ngFor="let album of albums | filter:priceFilter"  class="panel panel-default">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(album)"><em>{{album?.title}}</em> by {{album?.artist}}</h3>
-    <h4>{{album?.price}}</h4>
+    <h3 class="album-title" (click)="goToDetailPage(album)"><em>{{album?.title}}</em> by {{album?.artist}}</h3>
+    <h4>${{album?.price}}</h4>
     <div *ngIf="currentRoute === '/admin'">
       {{album?.description}}
       <hr>

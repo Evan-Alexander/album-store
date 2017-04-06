@@ -1,3 +1,91 @@
+@font-face {
+  font-family: 'bellbottom-laser';
+  src: url('./assets/BellBottom.ttf');
+}
+
+body {
+background-image: url('./assets/album.png');
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+}
+
+a.epi-nav {
+  /*color: #44165b;
+  border: solid 2px red;*/
+}
+
+.epi-nav {
+  background-color: 
+}
+
+.online-store {
+  text-shadow: -5px -5px 20px #ad40ce;
+  font-size: 6em;
+  font-family: 'bellbottom-laser';
+  color: #44165b;
+}
+
+.subheader {
+  text-shadow: -5px -5px 20px #ad40ce;
+  font-size: 3em;
+  font-family: 'bellbottom-laser';
+  color: #44165b;
+}
+
+.album-title {
+  font-family: 'Macondo', cursive;
+}
+
+#marketplace-tiles:hover {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+#marketplace-tiles >*,
+#detail-well {
+  text-align: center;
+}
+
+#marketplace-tiles {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  box-shadow: -5px -5px 20px #ad40ce,inset 1px -3px 10px #ad40ce;
+  background-color: rgba(123, 123, 123, 0.8);
+  color: #fff;
+  border: none;
+}
+
+#detail-well {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: -5px -5px 20px #ad40ce,inset 1px -3px 10px #ad40ce;
+  background-color: rgba(123, 123, 123, 0.8);
+  color: #fff;
+  border: none;
+}
+
+#filter {
+  margin: 0 auto;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  align: center;
+  color: #ad40ce;
+  margin-left: 43%;
+  font-size: 1.5em;
+}
+
+#about {
+  font-size: 1.5em;
+  text-shadow: 0px 0px 20px #fff;
+}
+
+#about p {
+  font-size: 2;
+}
+
 .footer {
   position: fixed;
   bottom: 0;

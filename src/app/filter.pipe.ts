@@ -13,23 +13,25 @@ export class FilterPipe implements PipeTransform {
   // Album: [];
 
   transform(input: Album[], priceFilter) {
-    var output: Album[] = [];
-    if (priceFilter === "underTen") {
-      for(var i = 0; i < input.length; i++) {
-        if (parseFloat(input[i].price) < 10) {
-          output.push(input[i]);
+    if (input) {
+      var output: Album[] = [];
+      if (priceFilter === "underTen") {
+        for(var i = 0; i < input.length; i++) {
+          if (parseFloat(input[i].price) < 10) {
+            output.push(input[i]);
+          }
         }
-      }
-      return output;
-    } else if (priceFilter === "overTen") {
-      for (var i = 0; i < input.length; i++) {
-        if (parseFloat(input[i].price) > 10) {
-          output.push(input[i]);
+        return output;
+      } else if (priceFilter === "overTen") {
+        for (var i = 0; i < input.length; i++) {
+          if (parseFloat(input[i].price) > 10) {
+            output.push(input[i]);
+          }
         }
+        return output;
+      } else {
+        return input;
       }
-      return output;
-    } else {
-      return input;
     }
   }
 }
